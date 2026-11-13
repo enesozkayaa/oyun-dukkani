@@ -15,6 +15,11 @@
 
 const OYUNLAR = [
   {
+    repo: 'sahte-haydut', ad: 'Sahte Haydut', tur: 'parti', renk: '#3b2414', emoji: '🤠',
+    aciklama: 'Vahşi Batı kasabasında kalabalığa karış. Haydutlar kasabalı gibi gezip gizlice soygun yapar, şerifler gerçek oyuncuları bulup vurur.',
+    etiketler: ['🌐 Sadece online 2–10', '🎤 Sesli + 📻 telsiz', '🕵️ Gizli rol', '🧊 3D'],
+  },
+  {
     repo: 'kule-savaslari', ad: 'Kule Savaşları', tur: 'aksiyon', renk: '#1b2a44', emoji: '🏗️',
     aciklama: 'Fizikli kule dikme yarışı. Parçaları vinçle indir, kuleni devirmeden yükselt, rakiplerine buz ve rüzgâr gönder.',
     etiketler: ['🤖 Bot var', '🌐 Online 2–4', '🎤 Sesli', '🧊 3D'],
