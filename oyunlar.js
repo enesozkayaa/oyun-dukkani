@@ -8,6 +8,7 @@
 //   tur      : Filtre için tür ('kart', 'parti', 'strateji', 'aksiyon', 'kelime')
 //   renk     : İkon yüklenemezse kapakta kullanılacak renk
 //   emoji    : İkon yüklenemezse kapakta görünecek emoji
+//   ikonSurum: (isteğe bağlı) oyunun simgesi değişince 1 artır, dükkan yenisini göstersin
 // İkon otomatik olarak <repo>/ikonlar/ikon-512.png adresinden alınır.
 // Sonra sw.js'teki ONBELLEK numarasını 1 artır, commit + push yap.
 // =============================================================
@@ -19,7 +20,7 @@ const OYUNLAR = [
     etiketler: ['🤖 Bot var', '🌐 Online 2–4', '🎤 Sesli', '🧊 3D'],
   },
   {
-    repo: 'dur-be-patlama', ad: 'Dur Be Patlama!', tur: 'parti', renk: '#1a0f0a', emoji: '💣',
+    repo: 'dur-be-patlama', ad: 'Dur Be Patlama!', tur: 'parti', renk: '#1a0f0a', emoji: '💣', ikonSurum: 2,
     aciklama: 'Kulaktan kulağa bomba çözme. Sondaki oyuncu bombayı görür, diğerleri kılavuzu okur. Herkes sadece yanındakini duyar!',
     etiketler: ['🌐 Sadece online 2–4', '🎤 Sesli', '🧊 3D'],
   },

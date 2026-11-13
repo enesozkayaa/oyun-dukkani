@@ -43,7 +43,8 @@
     const resim = new Image();
     resim.alt = '';
     resim.loading = 'lazy';
-    resim.src = adres + 'ikonlar/ikon-512.png';
+    // ikonSurum: oyunun simgesi değişince oyunlar.js'te 1 artır, tarayıcı eskisini göstermesin
+    resim.src = adres + 'ikonlar/ikon-512.png' + (o.ikonSurum ? '?v=' + o.ikonSurum : '');
     resim.onerror = () => resim.remove();
     kapak.append(yedek, resim);
 
