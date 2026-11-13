@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+  Oyun Dükkanı - uygulama simgesini çizer. Adres sonuna ?boyut=512&pay=0.08 yazılır.
+  PNG'ye çevirmek için (Edge görünmez modda ekran görüntüsü alır):
+    msedge --headless --hide-scrollbars --window-size=512,512 --screenshot=ikonlar/ikon-512.png "file:///.../araclar/ikon-ciz.html?boyut=512&pay=0.08"
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<style>html, body { margin: 0; background: #1a1230; overflow: hidden; } canvas { display: block; }</style>
+</head>
+<body>
+<script>
+  const ayar = new URLSearchParams(location.search);
+  const boyut = +(ayar.get('boyut') || 512);
+  const pay = +(ayar.get('pay') || 0.08);
+  const c = document.createElement('canvas');
+  c.width = c.height = boyut;
+  document.body.appendChild(c);
+  const g = c.getContext('2d');
+  g.scale(boyut / 512, boyut / 512);
+
+  const arka = g.createRadialGradient(180, 120, 20, 256, 256, 420);
+  arka.addColorStop(0, '#5a37a8'); arka.addColorStop(0.55, '#2a1a52'); arka.addColorStop(1, '#120c24');
+  g.fillStyle = arka; g.fillRect(0, 0, 512, 512);
+
+  g.save();
+  const k = 1 - pay * 2;
+  g.translate(256, 256); g.scale(k, k); g.translate(-256, -256);
+
+  // Dükkan tentesi (çizgili)
+  const renkler = ['#ff5d73', '#fff4e0'];
+  for (let i = 0; i < 6; i++) {
+    g.fillStyle = renkler[i % 2];
+    g.beginPath();
+    const x = 66 + i * 63.3;
+    g.moveTo(x, 110); g.lineTo(x + 63.3, 110); g.lineTo(x + 63.3, 200);
+    g.arc(x + 31.65, 200, 31.65, 0, Math.PI);
+    g.closePath(); g.fill();
+  }
+  g.fillStyle = '#c23a52'; g.fillRect(56, 92, 400, 26);
+
+  // Vitrin gövdesi
+  g.fillStyle = '#ffd166'; g.fillRect(86, 232, 340, 200);
+  g.fillStyle = '#2a1a52'; g.fillRect(110, 256, 292, 152);
+
+  // Vitrinde oyun kolu
+  g.fillStyle = '#7ce0ff';
+  g.beginPath(); g.roundRect(160, 300, 192, 84, 42); g.fill();
+  g.fillStyle = '#2a1a52';
+  g.fillRect(196, 334, 44, 14); g.fillRect(211, 319, 14, 44);
+  g.beginPath(); g.arc(300, 330, 10, 0, 7); g.fill();
+  g.beginPath(); g.arc(324, 354, 10, 0, 7); g.fill();
+
+  // Yıldız parıltıları
+  g.fillStyle = '#fff';
+  [[120, 60, 10], [400, 54, 8], [450, 250, 7], [60, 280, 6]].forEach(([x, y, r]) => {
+    g.beginPath();
+    for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; const rr = i % 2 ? r * 0.35 : r * 1.6; g.lineTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr); }
+    g.closePath(); g.fill();
+  });
+  g.restore();
+</script>
+</body>
+</html>

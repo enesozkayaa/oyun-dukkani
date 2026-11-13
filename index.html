@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Oyun Dükkanı</title>
+  <meta name="description" content="Tüm oyunlar tek yerde. Birini seç, Oyna'ya bas.">
+  <meta name="theme-color" content="#1a1230">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Oyun Dükkanı">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="ikonlar/ikon-192.png">
+  <link rel="apple-touch-icon" href="ikonlar/ikon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="ikonlar/ikon-192.png" alt="">
+    <div>
+      <h1>Oyun Dükkanı</h1>
+      <p class="alt">Tüm oyunlar tek yerde. Birini seç, <b>Oyna</b>'ya bas.</p>
+    </div>
+  </header>
+
+  <!-- Filtre düğmeleri: oyunlar.js'teki 'tur' ve etiketlere göre -->
+  <nav id="filtreler" aria-label="Filtre"></nav>
+
+  <main id="vitrin"></main>
+
+  <footer>
+    <p>💡 Telefonda ana ekrana eklemek için: Safari'de <b>Paylaş → Ana Ekrana Ekle</b>, Android'de <b>⋮ → Ana ekrana ekle</b>.</p>
+  </footer>
+
+  <script src="oyunlar.js"></script>
+  <script src="dukkan.js"></script>
+  <script>
+    // iPhone sayfayı kendi kendine büyütmesin (iki parmak / çift dokunma)
+    ['gesturestart', 'gesturechange', 'gestureend'].forEach(t => document.addEventListener(t, e => e.preventDefault(), { passive: false }));
+    document.addEventListener('touchmove', e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+    if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js');
+  </script>
+</body>
+</html>
