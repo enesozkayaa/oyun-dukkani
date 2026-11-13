@@ -26,6 +26,9 @@
     return d;
   };
 
+  // Oyun yeni sekmede açılsın, dükkan sekmesi açık kalsın
+  const yeniSekme = a => { a.target = '_blank'; a.rel = 'noopener'; return a; };
+
   function kartYap(o) {
     const adres = KOK + o.repo + '/';
     const kart = el('article', 'kart');
@@ -34,6 +37,7 @@
     // Kapak: oyunun kendi ikonu; yüklenemezse renkli zemin + emoji
     const kapak = el('a', 'kapak');
     kapak.href = adres;
+    yeniSekme(kapak);
     kapak.setAttribute('aria-label', o.ad + ' oyununu aç');
     const yedek = el('span', 'yedek', o.emoji || '🎮');
     const resim = new Image();
@@ -51,6 +55,7 @@
 
     const oyna = el('a', 'oyna', '▶ Oyna');
     oyna.href = adres;
+    yeniSekme(oyna);
     govde.append(oyna);
 
     kart.append(kapak, govde);
