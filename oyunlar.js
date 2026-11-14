@@ -15,6 +15,11 @@
 
 const OYUNLAR = [
   {
+    repo: 'hayalet-dongusu', ad: 'Hayalet Döngüsü', tur: 'aksiyon', renk: '#2a2440', emoji: '👻',
+    aciklama: 'Cüceler kale kuşatıyor. Her tur zaman geri sarılır, geçmiş hâlin hayalet olup sana yardım eder. Köprüyü indir, kapıyı aç, bayrağı kap; hayaletlerin yolunu kesersen paradoks!',
+    etiketler: ['🌐 Online 2–8 · 🧙 tek başına', '🎤 Takım sesi', '🔁 Zaman döngüsü', '🧊 3D'],
+  },
+  {
     repo: 'sahte-haydut', ad: 'Sahte Haydut', tur: 'parti', renk: '#3b2414', emoji: '🤠',
     aciklama: 'Vahşi Batı kasabasında kalabalığa karış. Haydutlar kasabalı gibi gezip gizlice soygun yapar, şerifler gerçek oyuncuları bulup vurur.',
     etiketler: ['🌐 Sadece online 2–10', '🎤 Sesli + 📻 telsiz', '🕵️ Gizli rol', '🧊 3D'],
