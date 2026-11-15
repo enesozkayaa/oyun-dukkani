@@ -15,7 +15,7 @@
 
 const OYUNLAR = [
   {
-    repo: 'calkala-kaptan', ad: 'Patlat Kaptan!', tur: 'aksiyon', renk: '#1f6fb8', emoji: '💨', ikonSurum: 2,
+    repo: 'patlat-kaptan', ad: 'Patlat Kaptan!', tur: 'aksiyon', renk: '#1f6fb8', emoji: '💨', ikonSurum: 2,
     aciklama: 'Basılı tut, osur, prrrt! Teknenin kenarına tutun, osurarak itip havada dolana dolana yükselen nehirde zirveye tırman. Dönen kütüklerden ve taşlardan kaç, kenarda korkuluk yok!',
     etiketler: ['🌐 Sadece online 2–8', '🎤 Tekne içi ses', '🛶 Takım yarışı', '🧊 3D'],
   },
