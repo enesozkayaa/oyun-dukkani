@@ -15,6 +15,11 @@
 
 const OYUNLAR = [
   {
+    repo: 'calkala-kaptan', ad: 'Çalkala Kaptan!', tur: 'aksiyon', renk: '#1f6fb8', emoji: '🍾',
+    aciklama: 'Sırtındaki gazoz şişesini çalkala, bırak, fışşş! Takımınla yuvarlak tekneni köpükle iterek dağın etrafında dolanan nehirde zirveye tırman. Fazla çalkalarsan şişe patlar!',
+    etiketler: ['🌐 Sadece online 2–8', '🎤 Tekne içi ses', '🛶 Takım yarışı', '🧊 3D'],
+  },
+  {
     repo: 'hayalet-dongusu', ad: 'Hayalet Döngüsü', tur: 'aksiyon', renk: '#2a2440', emoji: '👻',
     aciklama: 'Cüceler kale kuşatıyor. Her tur zaman geri sarılır, geçmiş hâlin hayalet olup sana yardım eder. Köprüyü indir, kapıyı aç, bayrağı kap; hayaletlerin yolunu kesersen paradoks!',
     etiketler: ['🌐 Online 2–8 · 🧙 tek başına', '🎤 Takım sesi', '🔁 Zaman döngüsü', '🧊 3D'],
