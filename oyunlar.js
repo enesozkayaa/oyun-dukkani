@@ -16,7 +16,7 @@
 const OYUNLAR = [
   {
     repo: 'saklan-kac', ad: 'SaklanKaç', tur: 'parti', renk: '#3a1a4a', emoji: '🧹',
-    aciklama: 'Cadılı saklambaç! İlk harita büyücü mutfağı Sihirli Kiler. Cadılar süpürgeyle uçar, bir eşyanın kılığına girip buzdolabına, çekmeceye, rafa saklanır. Aşçılar büyülü kepçe ve gözcü iksiriyle onları arar. Sahte kopyalara dikkat!',
+    aciklama: 'Cadılı saklambaç! Bodrumlu, iki katlı, bahçeli büyücü evinde cadılar süpürgeyle uçar, tablodan avizeye her şeyin kılığına girip saklanır. Aşçılar büyülü domates ve gözcü iksiriyle arar, vurulan eşyalar fırlar. Sahte kopyalara dikkat!',
     etiketler: ['🌐 Sadece online 2–10', '🎤 Takım içi ses', '🙈 Saklambaç', '🧊 3D'],
   },
   {
