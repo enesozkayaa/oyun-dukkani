@@ -15,6 +15,11 @@
 
 const OYUNLAR = [
   {
+    repo: 'zarena-savaslari', ad: 'Zarena Savaşları', tur: 'aksiyon', renk: '#7a2a14', emoji: '🎲',
+    aciklama: 'Zar at, en büyük atan ilk seçer: kılıç mı süpürge mi? Eşyalarını kuşan, kıyafeti olmayan donla dövüşür. Arenada son kalan ve en çok yere seren kazanır, alan daralır!',
+    etiketler: ['🤖 Bot var', '🌐 Online 2–10', '🎤 Sesli', '🧊 3D'],
+  },
+  {
     repo: 'patlat-kaptan', ad: 'Patlat Kaptan!', tur: 'aksiyon', renk: '#1f6fb8', emoji: '💨', ikonSurum: 2,
     aciklama: 'Basılı tut, osur, prrrt! Teknenin kenarına tutun, osurarak itip havada dolana dolana yükselen nehirde zirveye tırman. Dönen kütüklerden ve taşlardan kaç, kenarda korkuluk yok!',
     etiketler: ['🌐 Sadece online 2–8', '🎤 Tekne içi ses', '🛶 Takım yarışı', '🧊 3D'],
