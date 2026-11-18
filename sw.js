@@ -4,7 +4,7 @@
 // Not: Oyunların kendileri burada saklanmaz; her oyun kendi adresinden açılır.
 // =============================================================
 
-const ONBELLEK = 'oyun-dukkani-v9';
+const ONBELLEK = 'oyun-dukkani-v10';
 const DOSYALAR = [
   './', 'index.html', 'style.css', 'oyunlar.js', 'dukkan.js',
   'manifest.webmanifest', 'ikonlar/ikon-192.png', 'ikonlar/ikon-512.png',

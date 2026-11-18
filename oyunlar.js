@@ -15,6 +15,11 @@
 
 const OYUNLAR = [
   {
+    repo: 'saklan-kac', ad: 'SaklanKaç', tur: 'parti', renk: '#3a1a4a', emoji: '🧹',
+    aciklama: 'Cadılı saklambaç! İlk harita büyücü mutfağı Sihirli Kiler. Cadılar süpürgeyle uçar, bir eşyanın kılığına girip buzdolabına, çekmeceye, rafa saklanır. Aşçılar büyülü kepçe ve gözcü iksiriyle onları arar. Sahte kopyalara dikkat!',
+    etiketler: ['🌐 Sadece online 2–10', '🎤 Takım içi ses', '🙈 Saklambaç', '🧊 3D'],
+  },
+  {
     repo: 'zarena-savaslari', ad: 'Zarena Savaşları', tur: 'aksiyon', renk: '#7a2a14', emoji: '🎲',
     aciklama: 'Zar at, en büyük atan ilk seçer: kılıç mı süpürge mi? Eşyalarını kuşan, kıyafeti olmayan donla dövüşür. Arenada son kalan ve en çok yere seren kazanır, alan daralır!',
     etiketler: ['🤖 Bot var', '🌐 Online 2–10', '🎤 Sesli', '🧊 3D'],
